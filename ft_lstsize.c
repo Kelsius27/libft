@@ -21,7 +21,7 @@ int	ft_lstsize(t_list *lst)
 		return (0);
 	element = lst;
 	count = 1;
-	while (element->next != '\0')
+	while (element->next != NULL)
 	{
 		count++;
 		element = element->next;

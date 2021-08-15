@@ -17,9 +17,9 @@ t_list	*ft_lstnew(void *content)
 	t_list	*newelement;
 
 	newelement = (t_list *)malloc(sizeof(t_list));
-	if (newelement == '\0')
-		return ('\0');
+	if (newelement == NULL)
+		return (NULL);
 	newelement->content = content;
-	newelement->next = '\0';
+	newelement->next = NULL;
 	return (newelement);
 }

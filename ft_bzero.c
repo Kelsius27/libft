@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /**
- * @brief Fill pointer with '\0'
+ * @brief Fill pointer with NULL
  *
  * @param b Pointer
  * @param len Size to fill

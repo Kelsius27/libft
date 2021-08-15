@@ -17,14 +17,14 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*element;
 	t_list	*newlst;
 
-	newlst = '\0';
-	while (lst != '\0')
+	newlst = NULL;
+	while (lst != NULL)
 	{
 		element = ft_lstnew(f(lst->content));
-		if (element != '\0')
+		if (element != NULL)
 		{
 			ft_lstclear(&newlst, del);
-			return ('\0');
+			return (NULL);
 		}
 		ft_lstadd_back(&newlst, element);
 		lst = lst->next;

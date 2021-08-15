@@ -20,9 +20,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	n = ft_strlen((s + start));
 	if (n > len)
 		n = len;
+	if (ft_strlen(s) < start)
+		n = 0;
 	sub = ft_calloc((n + 1), sizeof(char));
-	if (sub == '\0')
-		return ('\0');
+	if (sub == NULL)
+		return (NULL);
 	ft_strlcpy(sub, (char *)(s + start), (n + 1));
 	return (sub);
 }

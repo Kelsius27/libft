@@ -41,8 +41,8 @@ char	*ft_itoa(int n)
 	neg = 1;
 	size = ft_sizenum(n);
 	num = malloc((size + 1) * sizeof(char));
-	if (num == '\0')
-		return ('\0');
+	if (num == NULL)
+		return (NULL);
 	*(num + size) = '\0';
 	if (n < 0)
 		neg = -1;

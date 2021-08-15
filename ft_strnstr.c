@@ -14,23 +14,18 @@
 
 char	*ft_strnstr(const char *s, const char *find, size_t slen)
 {
-	size_t	i;
+	size_t	j;
 
-	while (*s != '\0')
+	j = 0;
+	if ((s[0] == '\0') && (find[0] == '\0'))
+		return ((char *)s);
+	while (*(s + j) != '\0')
 	{
-		i = 0;
-		while ((*s == *(find + i)) && (*s != '\0'))
-		{
-			s++;
-			i++;
-			slen--;
-		}
-		if ((int)slen < 0)
-			return ('\0');
-		if (*(find + i) == '\0')
-			return ((char *)s - i);
-		s++;
-		slen--;
+		if ((j + ft_strlen(find)) > slen)
+			return (NULL);
+		if (ft_strncmp((s + j), find, ft_strlen(find)) == 0)
+			return ((char *)(s + j));
+		j++;
 	}
-	return ('\0');
+	return (NULL);
 }

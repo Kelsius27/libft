@@ -34,7 +34,7 @@ int	ft_atoi(const char *str)
 		sign = -1;
 		str++;
 	}
-	if (*str == '+')
+	else if (*str == '+')
 		str++;
 	while (*str)
 	{

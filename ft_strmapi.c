@@ -21,8 +21,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = 0;
 	size = ft_strlen((const char *)s);
 	newstr = malloc((size + 1) * sizeof(char));
-	if (newstr == '\0')
-		return ('\0');
+	if (newstr == NULL)
+		return (NULL);
 	while (*(s + i))
 	{
 		*(newstr + i) = f(i, *(s + i));

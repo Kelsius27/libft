@@ -41,7 +41,7 @@ char	**ft_freepointer(char **p)
 		i++;
 	}
 	free(p);
-	return ('\0');
+	return (NULL);
 }
 
 char	**ft_split(char const *s, char c)
@@ -52,8 +52,8 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	splited = ft_countwords(s, c);
-	if (splited == '\0')
-		return ('\0');
+	if (splited == NULL)
+		return (NULL);
 	while (*s)
 	{
 		if (*s != c)
@@ -62,7 +62,7 @@ char	**ft_split(char const *s, char c)
 			while ((*s) && (*s != c))
 				s++;
 			*(splited + i) = (char *)malloc((s - start + 1) * sizeof(char));
-			if (*(splited + i) == '\0')
+			if (*(splited + i) == NULL)
 				return (ft_freepointer(splited));
 			ft_strlcpy(*(splited + i++), start, (s - start + 1));
 		}

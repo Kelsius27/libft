@@ -19,8 +19,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	size = ft_strlen(s1) + ft_strlen(s2) + 1;
 	nword = ft_calloc(size, sizeof(char));
-	if (nword == '\0')
-		return ('\0');
+	if (nword == NULL)
+		return (NULL);
 	ft_strlcpy(nword, (char *)s1, ft_strlen(s1) + 1);
 	ft_strlcat(nword, (char *)s2, size + 1);
 	return (nword);

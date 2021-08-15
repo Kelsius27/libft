@@ -25,8 +25,8 @@ void	*ft_calloc(size_t nelem, size_t elsize)
 	size_t			i;
 
 	elems = malloc(nelem * elsize);
-	if (elems == '\0')
-		return ('\0');
+	if (elems == NULL)
+		return (NULL);
 	i = 0;
 	while (i < (nelem * elsize))
 	{
