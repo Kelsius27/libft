@@ -18,6 +18,10 @@ static char	**ft_countwords(char const *s, char c)
 	int	i;
 
 	words = 0;
+	if (!s)
+		return (NULL);
+	if (!*s)
+		return ((char **)ft_calloc((size_t)words + 1, sizeof(char *)));
 	i = 0;
 	while (*(s + i + 1) != '\0')
 	{

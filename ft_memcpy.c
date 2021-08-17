@@ -6,7 +6,7 @@
 /*   By: kmarques <kmarques@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/28 19:13:21 by kmarques          #+#    #+#             */
-/*   Updated: 2021/08/04 19:17:25 by kmarques         ###   ########.fr       */
+/*   Updated: 2021/08/17 16:33:18 by kmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t len)
 	char	*s;
 	char	*d;
 
+	if (!dst && !src)
+		return (NULL);
 	d = (char *)dst;
 	s = (char *)src;
 	i = 0;
