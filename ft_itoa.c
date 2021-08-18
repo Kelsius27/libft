@@ -6,7 +6,7 @@
 /*   By: kmarques <kmarques@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/06 14:11:01 by kmarques          #+#    #+#             */
-/*   Updated: 2021/08/06 19:01:24 by kmarques         ###   ########.fr       */
+/*   Updated: 2021/08/18 12:18:19 by kmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,12 @@ static int	ft_sizenum(int n)
 	return (size + 1);
 }
 
+/**
+ * @brief Transform int to char
+ *
+ * @param n Integer to be transformed
+ * @return char* Pointer with number
+ */
 char	*ft_itoa(int n)
 {
 	char	*num;

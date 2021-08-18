@@ -6,12 +6,18 @@
 /*   By: kmarques <kmarques@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 15:27:55 by kmarques          #+#    #+#             */
-/*   Updated: 2021/08/09 16:15:01 by kmarques         ###   ########.fr       */
+/*   Updated: 2021/08/18 12:29:39 by kmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Create new element
+ *
+ * @param content Content to element
+ * @return t_list* New element
+ */
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*newelement;

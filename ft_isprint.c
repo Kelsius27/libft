@@ -6,12 +6,18 @@
 /*   By: kmarques <kmarques@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 19:40:37 by kmarques          #+#    #+#             */
-/*   Updated: 2021/07/27 20:13:25 by kmarques         ###   ########.fr       */
+/*   Updated: 2021/08/18 12:22:07 by kmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Tests if it is printable
+ *
+ * @param c
+ * @return int 2 for lowewrcase, 1 for upper, 4 for number, 16 for the rest
+ */
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)

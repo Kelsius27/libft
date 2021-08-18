@@ -6,7 +6,7 @@
 /*   By: kmarques <kmarques@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 19:15:51 by kmarques          #+#    #+#             */
-/*   Updated: 2021/08/17 17:34:52 by kmarques         ###   ########.fr       */
+/*   Updated: 2021/08/18 12:16:23 by kmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
  * @param str Number to convert
  * @return int
  */
-
 static int	ft_definesign(const char *str)
 {
 	if (*str == '-')

@@ -6,12 +6,20 @@
 /*   By: kmarques <kmarques@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/28 18:22:16 by kmarques          #+#    #+#             */
-/*   Updated: 2021/08/04 18:21:49 by kmarques         ###   ########.fr       */
+/*   Updated: 2021/08/18 13:03:30 by kmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Iniciate B with Len chars C
+ *
+ * @param b Pointer do memory space
+ * @param c Char
+ * @param len Length
+ * @return void* Pointer do B
+ */
 void	*ft_memset(void *b, int c, size_t len)
 {
 	size_t	i;

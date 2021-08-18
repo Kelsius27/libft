@@ -6,7 +6,7 @@
 /*   By: kmarques <kmarques@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 19:30:12 by kmarques          #+#    #+#             */
-/*   Updated: 2021/08/05 19:00:31 by kmarques         ###   ########.fr       */
+/*   Updated: 2021/08/18 12:35:17 by kmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	n;
 	char	*sub;
 
+	if (!s)
+		return (NULL);
 	n = ft_strlen((s + start));
 	if (n > len)
 		n = len;

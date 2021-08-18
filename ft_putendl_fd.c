@@ -6,7 +6,7 @@
 /*   By: kmarques <kmarques@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/06 19:14:13 by kmarques          #+#    #+#             */
-/*   Updated: 2021/08/06 19:16:44 by kmarques         ###   ########.fr       */
+/*   Updated: 2021/08/18 12:41:06 by kmarques         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	while (*s)
 	{
 		write (fd, s, 1);
